@@ -1,2 +1,2 @@
-# annotation-scanning
-Portable library for annotation scanning to be proposed as OpenJDK JEP
+# annotation-discovery
+Portable library for annotation discovery to be proposed as OpenJDK JEP
