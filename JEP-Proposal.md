@@ -66,10 +66,19 @@ to release java 10 and 11 within the next year.
 
 Description
 -----------
-At this state the description is very much open for contributions and debate, but should include:
-- An algorithm and API that will allow the efficient discovery of classes annotated with specified annotations without loading those classes. 
-- The discovery may be scoped to an individual module or classloader.
-- Efficient discovery may be assisted by the inclusion of annotation metadata within META-INF
+At this state the description is very much open for contributions and debate.
+
+#### Requirements
+ 0. To retrieve the class names of classes have specific class and/or method annotations.
+ 1. Correctness is the primary requirement, so that even without any compile phase optimisations the correct results will be returned.
+ 2. Efficiency is a secondary requirement, so that for given annotations efficient lookup can be done, perhaps using compile time optimisations. 
+ 3. Annotation information must be retrieved without loading classes.
+ 4. Annotation queries may be scoped by Module, Layer or Classloader
+ 5. Efficiently support multiple queries, so that the results of one query may be used as the basis of another query without excessive duplication of effort (eg. @HandlerTypes)
+
+#### Implementation
+
+- Efficient discovery may be assisted by the optional inclusion of annotation metadata within META-INF
 
 Alternatives
 ------------
