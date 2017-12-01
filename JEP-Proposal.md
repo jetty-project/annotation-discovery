@@ -66,9 +66,8 @@ to release java 10 and 11 within the next year.
 
 Description
 -----------
-
-- Design an algorithm and API that will allow the efficient discovery of classes
-annotated with specified annotations without loading those classes. 
+At this state the description is very much open for contributions and debate, but should include:
+- An algorithm and API that will allow the efficient discovery of classes annotated with specified annotations without loading those classes. 
 - The discovery may be scoped to an individual module or classloader.
 - Efficient discovery may be assisted by the inclusion of annotation metadata within META-INF
 
@@ -82,7 +81,6 @@ At runtime:
 
 Dependencies
 -----------
-
 The algorithms required for annotation discovery are highly dependent on the algorithms already implemented 
 by the module system and classloaders.  This effort can either develop in parallel with the existing algorithms
 or attempt integrate to share the logic for module/classpath resolution.
