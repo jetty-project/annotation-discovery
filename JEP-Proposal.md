@@ -1,5 +1,6 @@
+```
 Title: Annotation Discovery
-Author: Greg Wilkins
+Author: Greg Wilkins <gregw@webtide.com>
 Organization: Webtide LLC
 Created: 2017/12/01
 Type: Feature
@@ -7,16 +8,13 @@ State: Draft
 Exposure: Open
 Component: modules
 Scope: SE
-JSR:
-RFE: 
 Discussion: discuss at openjdk dot java dot net
-Start:
+Start: 2018/Q1 ?
 Depends: 
-Blocks: 
-Effort: M
-Duration: M
-Template: 2.0
-
+Effort: M?
+Duration: M?
+Template: 1.0
+```
 
 Summary
 -------
