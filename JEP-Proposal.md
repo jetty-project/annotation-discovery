@@ -75,6 +75,8 @@ At this state the description is very much open for contributions and debate.
  3. Annotation information must be retrieved without loading classes.
  4. Annotation queries may be scoped by Module, Layer or Classloader
  5. Efficiently support multiple queries, so that the results of one query may be used as the basis of another query without excessive duplication of effort (eg. @HandlerTypes)
+ 6. Annotations must be discoverable via meta-annotations; e.g. when having a meta-annotation `@interface Qualifier {}` and an annotation `@Qualifier @interface Informal {}`, elements annotated with `@Informal` should be discoverable by querying for `@Qualifier`
+ 7. The API should allow to discover _declaration annotations_ as well as _type annotations_ (as usable since Java 8)
 
 #### Implementation
 
